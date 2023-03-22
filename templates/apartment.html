@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Тур по Квартире
+{% endblock %}
+
+{% block style %}
+    body { background: url();
+    background-color: Black;}        <!--Это так нужно, типо дарк нет и сверху url пустой тоже!!!-->
+{% endblock %}
+
+{% block body %}
+<div class="container px-4 py-5">
+    <h2 style="font-family: Comic Sans MS; color: DarkSlateBlue; text-shadow: white 0 0 5px;" class="pb-2 border-bottom display-4">Квартира</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div>
+          <img height="200" width="300" src="{{ url_for('static', filename='/images/Kitchen.jpg') }}">
+          <h3 style="text-shadow: white 0 0 5px; color: SteelBlue;" class="fs-2">КУХНЯ</h3>
+          <p style="font-family: Courier New;" class="text-white">
+            Идеальное место, где вы можете насладиться блюдом или же осмотреть просторы природы в вашем совковом окне.
+            Это еще не конец, вас ждет развлекательная игра "Ты заебал открывать холодильник каждые 43 минуты!" </p>
+          <a href="https://t.me/+EXPHV2zE3m44YWFi" class="btn btn-primary mt-5">
+            КУПИТЬ
+          </a>
+          <p style="text-shadow: Fuchsia 0 0 5px; color: Silver;" class="fs-4">140 руб/ч.</p>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <div>
+          <img height="200" width="300" src="{{ url_for('static', filename='/images/Bedroom.jpg') }}">
+          <h3 style="text-shadow: white 0 0 5px; color: SteelBlue;" class="fs-2">КОМНАТА</h3>
+          <p style="font-family: Courier New;" class="text-white">
+            Если вы ищете безопасное и комфортное место, то это отличный вариант.
+            Вас ожидает просторы по интернет кабелю, который каждый год обрезает ваш сосед,
+            так же вы встретитесь с достопримечательностями в виде мертвых тараканов под диваном.</p>
+          <a href="https://t.me/+EXPHV2zE3m44YWFi" class="btn btn-primary">
+            КУПИТЬ
+          </a>
+          <p style="text-shadow: Fuchsia 0 0 5px; color: Silver;" class="fs-4">269 руб/ч.</p>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <div>
+          <img height="200" width="300" src="{{ url_for('static', filename='/images/Bath-Toilet Room.jpg') }}">
+          <h3 style="text-shadow: white 0 0 5px; color: SteelBlue;" class="fs-2">ВАННА-ТУАЛЕТ</h3>
+          <p style="font-family: Courier New;" class="text-white">
+            Вы чувствуете, что вам действительно нужно помыться, что даже и люди начали это подмечать?
+            Это место вас удивит не только водой, но и туалетом, который проведён в канализацию.
+            Чего стоите, наслаждайтесь всей жизнью сполна, товарищ!</p>
+          <a href="https://t.me/+EXPHV2zE3m44YWFi" class="btn btn-primary mt-4">
+            КУПИТЬ
+          </a>
+          <p style="text-shadow: Fuchsia 0 0 5px; color: Silver;" class="fs-4">87 руб/ч. | доп. плата за воду</p>
+        </div>
+      </div>
+
+
+    </div>
+</div>
+{% endblock %}

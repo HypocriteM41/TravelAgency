@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная
+{% endblock %}
+
+{% block body %}
+<div class="w-50 h-100 p-5 mx-auto flex-column">
+
+  <div class="container">
+      <br><br>
+    <h1 style="font-family: Comic Sans MS;" class="display-3 pb-1 border-bottom">Добро пожаловать в частный Турагенство</h1>
+    <p style="font-family: Courier New;" class="display-6">
+      Я предстваляю вам свои услуги в путешествиях по странам. Вам не придется искать самому,
+      как добраться до нужной точки, я помогу вам выгодно с этой проблемой</p>
+    <p class="lead">
+      <a href="/direction" class="btn btn-lg btn-light fw-bold border-black bg-white">Начать Путешествие</a>
+    </p>
+  </div>
+
+  <footer class="pb-1 p-4 px-3 mt-auto text-white">
+    <p>Мои соц сети <a href="https://t.me/Hypocrite_T/" style="text-shadow: black 0 0 5px; color: DeepSkyBlue;"  >Телеграм</a>,
+      <a href="https://vk.com/hypocritem41" style="text-shadow: black 0 0 5px; color: Blue;">ВКонтакте</a> и
+        <a href="https://github.com/HypocriteM41" style="text-shadow: black 0 0 5px; color: DimGrey;">GitHub</a>.</p>
+  </footer>
+</div>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Тур по России
+{% endblock %}
+
+{% block body %}
+<div class="container px-4 py-5">
+    <h2 style="font-family: Comic Sans MS;" class="pb-2 border-bottom display-4">Города</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div>
+          <img height="200" width="300" src="{{ url_for('static', filename='/images/Moscow.jpg') }}">
+          <h3 style="text-shadow: white 0 0 5px;" class="fs-2">МОСКВА</h3>
+          <p style="text-shadow: black 0 0 5px; font-family: Courier New;" class="text-white">
+            Особенность города в том, что он отличается комфортным проживанием и развитой инфраструктурой.
+            Из за масштабного озеленения города экология в Москве за последние годы улучшилась в разы. </p>
+          <a href="https://t.me/+EXPHV2zE3m44YWFi" class="btn btn-primary">
+            КУПИТЬ
+          </a>
+          <p style="text-shadow: green 0 0 5px;" class="fs-4">13 999 руб.</p>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <div>
+          <img height="200" width="300" src="{{ url_for('static', filename='/images/Saint Peterburg.jpg') }}">
+          <h3 style="text-shadow: white 0 0 5px;" class="fs-2">САНКТ-ПЕТЕРБУРГ</h3>
+          <p style="text-shadow: black 0 0 5px; font-family: Courier New;" class="text-white">
+            Прежде всего известная огромным количеством достопримечательностей и развлечений.
+            Также считается культурной столицей.</p>
+          <a href="https://t.me/+EXPHV2zE3m44YWFi" class="btn btn-primary mt-5">
+            КУПИТЬ
+          </a>
+          <p style="text-shadow: green 0 0 5px;" class="fs-4">10 499 руб.</p>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <div>
+          <img height="200" width="300" src="{{ url_for('static', filename='/images/Kaliningrad.jpg') }}">
+          <h3 style="text-shadow: white 0 0 5px;" class="fs-2">КАЛИНИНГРАД</h3>
+          <p style="text-shadow: black 0 0 5px; font-family: Courier New;" class="text-white">
+            Очень самобытный, спокойный, с большим количеством культурно-исторических мест.
+            Считается самым «европейским» городом в РФ. Количество преступлений — невысокое и продолжает снижаться.</p>
+          <a href="https://t.me/+EXPHV2zE3m44YWFi" class="btn btn-primary mt-4">
+            КУПИТЬ
+          </a>
+          <p style="text-shadow: green 0 0 5px;" class="fs-4">14 699 руб.</p>
+        </div>
+      </div>
+
+
+    </div>
+</div>
+{% endblock %}

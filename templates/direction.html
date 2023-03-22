@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Направление
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<h1 align="center" style="font-family: Comic Sans MS;" class="display-5 pt-2 mt-4 mb-4">Где вам больше всего интереснее побывать?</h1>
+
+<div class="container px-4 py-5" id="custom-cards">
+    <h2 style="font-family: Courier New;" class="pb-2 border-bottom">Выберите место</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+      <div class="col">
+
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+          <a href="/tour/russia" style=" background-image: url(/static/images/Russia.jpg)">
+
+          <div style="text-shadow: black 0 0 5px;" class="flex-column h-100 p-5 pb-3 text-white">
+            <h3 class="pt-5 mt-5 mb-4 display-5 lh-1 fw-bold">РОССИЯ</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="d-flex align-items-center me-3">
+                <small>Russia</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <small>Размер: 17 098 246 км²</small>
+              </li>
+            </ul>
+          </div>
+        </a></div>
+      </div>
+
+      <div class="col">
+
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+          <a href="/tour/germany" style=" background-image: url(/static/images/Germany.jpg)">
+
+          <div style="text-shadow: black 0 0 5px;" class="flex-column h-100 p-5 pb-3 text-white">
+            <h3 class="pt-5 mt-5 mb-4 display-5 lh-1 fw-bold">ГЕРМАНИЯ</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="d-flex align-items-center me-3">
+                <small>Germany</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <small>Размер: 357 408 км²</small>
+              </li>
+            </ul>
+          </div>
+        </a></div>
+      </div>
+
+       <div class="col">
+
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+            <a href="/tour/apartment" style="background-image: url(/static/images/Apartment.jpg)">
+
+            <div style="text-shadow: black 0 0 5px;" class="flex-column h-100 p-5 pb-3 text-white">
+              <h3 class="pt-5 mt-5 mb-4 display-5 lh-1 fw-bold">КВАРТИРА</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="d-flex align-items-center me-3">
+                  <small>Apartment</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <small>Размер: 0.033 км²</small>
+                </li>
+              </ul>
+            </div>
+          </a></div>
+       </div>
+    </div>
+</div>
+</div>
+{% endblock %}

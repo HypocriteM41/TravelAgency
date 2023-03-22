@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Тур по Германии
+{% endblock %}
+{% block body %}
+<div class="container px-4 py-5">
+    <h2 style="font-family: Comic Sans MS;" class="pb-2 border-bottom display-4">Города</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div>
+          <img height="200" width="300" src="{{ url_for('static', filename='/images/Heidelberg.jpg') }}">
+          <h3 style="text-shadow: white 0 0 5px;" class="fs-2">ГЕЙДЕЛЬБЕРГ</h3>
+          <p style="text-shadow: black 0 0 5px; font-family: Courier New;" class="text-white">
+            Это не только важный научный центр Германии, но и атмосфера романтики здесь повсюду.
+            Впечатлится архитектурой городских построек, чудом уцелевших во время войны. </p>
+          <a href="https://t.me/+EXPHV2zE3m44YWFi" class="btn btn-primary mt-4">
+            КУПИТЬ
+          </a>
+          <p style="text-shadow: green 0 0 5px;" class="fs-4">26 399 руб.</p>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <div>
+          <img height="200" width="300" src="{{ url_for('static', filename='/images/Leipzig.jpg') }}">
+          <h3 style="text-shadow: white 0 0 5px;" class="fs-2">ЛЕЙПЦИГ</h3>
+          <p style="text-shadow: black 0 0 5px; font-family: Courier New;" class="text-white">
+            Настоящая находка для тех, кто думает в какой город Германии поехать и хотел бы совместить культурный отдых и развлечения.
+            Лейпциг богат историческим наследием  и конечно, великолепные парки Розенталь и Ауэнвальд.</p>
+          <a href="https://t.me/+EXPHV2zE3m44YWFi" class="btn btn-primary">
+            КУПИТЬ
+          </a>
+          <p style="text-shadow: green 0 0 5px;" class="fs-4">24 199 руб.</p>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <div>
+          <img height="200" width="300" src="{{ url_for('static', filename='/images/Cologne.jpg') }}">
+          <h3 style="text-shadow: white 0 0 5px;" class="fs-2">КЁЛЬН</h3>
+          <p style="text-shadow: black 0 0 5px; font-family: Courier New;" class="text-white">
+            Один из самых красивых городов Германии, здесь все дышит историей:
+            Великолепные готические и барочные здания, старинные церкви и средневековые монастыри, руины времен Римской империи —
+            Кельн будет удивлять вас снова и снова.</p>
+          <a href="https://t.me/+EXPHV2zE3m44YWFi" class="btn btn-primary">
+            КУПИТЬ
+          </a>
+          <p style="text-shadow: green 0 0 5px;" class="fs-4">14 699 руб.</p>
+        </div>
+      </div>
+
+
+    </div>
+</div>
+{% endblock %}
